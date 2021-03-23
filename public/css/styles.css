@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);.bg-primary {
+  background-color: #f2732a !important;
+  color: #ffffff !important;
+}
+
+.bg-secondary {
+  background-color: #646466 !important;
+  color: #ffffff !important;
+}
+
+.bg-default {
+  background-color: #c2c2c2 !important;
+  color: #272727 !important;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+  color: #272727 !important;
+}
+
+.nav-link {
+  color: #ffffff !important;
+}
+
+.table {
+  width: 100% !important;
+}
+
+.table .thead-dark th {
+  color: #ffffff;
+  background-color: #646466;
+  border-color: #c2c2c2;
+  font-weight: normal;
+  padding: 5px 10px;
+}
+
+.custom-file-input:lang(en) ~ .custom-file-label::after {
+  content: "Buscar";
+}
+
+#alert-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+}
+
+.card .card-header {
+  background-color: #64646687;
+  font-weight: bold;
+  font-size: 0.99;
+}
+

@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);section {
+  width: 100vw;
+  position: relative;
+}
+
+section.first {
+  height: 82.5vh;
+}
+
+section .section-title {
+  text-align: center;
+  vertical-align: middle !important;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+section .section-title .name {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+section .section-title .icon {
+  color: #f2732a;
+  height: 100%;
+}
+
+section .section-title .icon-small {
+  font-size: 18px;
+}
+
+section .section-body .section-article h4 {
+  font-weight: bolder;
+  color: #f2732a;
+}
+
+section .section-body .section-article p {
+  text-align: justify;
+}
+
+nav.top {
+  font-size: 1rem;
+}
+
+nav .navbar-brand span.title {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+nav .nav-item {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 1rem;
+}
+
+nav .informacion .nav-item {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+#carouselPrincipal img {
+  height: 82.5vh;
+  width: 100vw;
+}
+
+#carouselPropiedad img {
+  height: 70vh;
+  width: 100%;
+}
+
+.carousel-multiple {
+  /* display 3 */
+}
+
+@media (max-width: 768px) {
+  .carousel-multiple .carousel-inner .carousel-item img {
+    height: 350px;
+  }
+
+  .carousel-multiple .carousel-inner .carousel-item > div {
+    display: none;
+  }
+
+  .carousel-multiple .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+.carousel-multiple .carousel-inner .carousel-item.active,
+.carousel-multiple .carousel-inner .carousel-item-next,
+.carousel-multiple .carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .carousel-multiple .carousel-inner .carousel-item img {
+    height: 250px;
+  }
+
+  .carousel-multiple .carousel-inner .carousel-item-right.active,
+  .carousel-multiple .carousel-inner .carousel-item-next {
+    transform: translateX(33.333%);
+  }
+
+  .carousel-multiple .carousel-inner .carousel-item-left.active,
+  .carousel-multiple .carousel-inner .carousel-item-prev {
+    transform: translateX(-33.333%);
+  }
+}
+
+.carousel-multiple .carousel-inner .carousel-item-right,
+.carousel-multiple .carousel-inner .carousel-item-left {
+  transform: translateX(0);
+}
+
+.bg-sombra {
+  background-color: #0000008a;
+}
+
+#resultado .card img {
+  width: 100%;
+  height: 250px !important;
+}
+

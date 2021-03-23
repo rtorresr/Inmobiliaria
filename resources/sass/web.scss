@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+section {
+    // height: 100vh;
+    width: 100vw;
+    position: relative;
+    &.first{
+        height: 82.5vh;
+    }
+
+    .section-title {
+        text-align: center;
+        vertical-align: middle!important;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+
+        .name {
+            font-weight: bolder;
+            font-size: 1.5rem;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+        }
+
+        .icon {
+            color: $primary;
+            height: 100%;
+
+            &-small {
+                font-size: 18px;
+
+            }
+        }
+    }
+
+    .section-body{
+        .section-article{
+            h4 {
+                font-weight: bolder;
+                color: $primary;
+            }
+
+            p {
+                text-align: justify;
+            }
+        }
+    }
+}
+
+nav{
+    &.top{
+        font-size: 1rem;
+    }
+
+    .navbar-brand {
+        span.title{
+            font-size: 1.3rem;
+            font-weight: bolder;
+        }
+    }
+
+    .nav-item{
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 1rem;
+    }
+
+    .informacion {
+        .nav-item{
+            margin-left: 5px;
+            margin-right: 5px;
+            font-size: 1.2rem;
+            font-weight: bolder;
+        }
+    }
+}
+
+#carouselPrincipal{
+    img {
+        height: 82.5vh;
+        width: 100vw;
+    }
+}
+
+#carouselPropiedad{
+    img {
+        height: 70vh;
+        width: 100%;
+    }
+}
+
+.carousel-multiple {
+    @media (max-width: 768px) {
+        .carousel-inner .carousel-item img {
+            height: 350px;
+        }
+
+        .carousel-inner .carousel-item > div {
+            display: none;
+        }
+        .carousel-inner .carousel-item > div:first-child {
+            display: block;
+        }
+    }
+
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        display: flex;
+    }
+
+    /* display 3 */
+    @media (min-width: 768px) {
+        .carousel-inner .carousel-item img {
+            height: 250px;
+        }
+
+        .carousel-inner .carousel-item-right.active,
+        .carousel-inner .carousel-item-next {
+            transform: translateX(33.333%);
+        }
+
+        .carousel-inner .carousel-item-left.active,
+        .carousel-inner .carousel-item-prev {
+            transform: translateX(-33.333%);
+        }
+    }
+
+    .carousel-inner .carousel-item-right,
+    .carousel-inner .carousel-item-left{
+        transform: translateX(0);
+    }
+}
+
+.bg-sombra{
+    background-color: #0000008a;
+}
+
+#resultado {
+    .card {
+        img {
+            width: 100%;
+            height: 250px!important;
+        }
+    }
+}
